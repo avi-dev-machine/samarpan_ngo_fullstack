@@ -92,6 +92,17 @@ async def websocket_endpoint(websocket: WebSocket, room: str = "global"):
         manager.disconnect(websocket, room)
 
 
+# Database trigger seeder endpoint
+@app.get("/api/v1/admin/seed")
+async def trigger_db_seed():
+    try:
+        from seed_db import seed_data
+        await seed_data()
+        return {"status": "success", "message": "Database seeded successfully with all campaigns, forums, comments, notifications, ledgers, events, and resources!"}
+    except Exception as e:
+        return {"status": "error", "message": f"Seeding failed: {str(e)}"}
+
+
 @app.get("/api/health")
 async def health_check():
     return {"status": "ok", "version": settings.APP_VERSION, "app": settings.APP_NAME}
