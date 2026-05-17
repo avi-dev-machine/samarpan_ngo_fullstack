@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime, timezone
-from sqlalchemy import Column, String, Boolean, DateTime, Text, ForeignKey, Float, Integer, Enum as SAEnum
-from sqlalchemy.dialects.postgresql import UUID, JSONB
+from sqlalchemy import Column, String, Boolean, DateTime, Text, ForeignKey, Float, Integer, Enum as SAEnum, JSON
+from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from app.core.database import Base
 import enum
@@ -35,8 +35,8 @@ class Campaign(Base):
     start_date = Column(DateTime(timezone=True), nullable=True)
     end_date = Column(DateTime(timezone=True), nullable=True)
     cover_image = Column(String(500), nullable=True)
-    media = Column(JSONB, default=list)
-    tags = Column(JSONB, default=list)
+    media = Column(JSON, default=list)
+    tags = Column(JSON, default=list)
     is_featured = Column(Boolean, default=False)
     is_emergency = Column(Boolean, default=False)
     view_count = Column(Integer, default=0)
@@ -58,7 +58,7 @@ class CampaignUpdate(Base):
     campaign_id = Column(UUID(as_uuid=True), ForeignKey("campaigns.id"), nullable=False)
     title = Column(String(500), nullable=False)
     content = Column(Text, nullable=False)
-    media = Column(JSONB, default=list)
+    media = Column(JSON, default=list)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
 
     campaign = relationship("Campaign", back_populates="updates")

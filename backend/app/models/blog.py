@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime, timezone
-from sqlalchemy import Column, String, DateTime, Text, ForeignKey, Boolean, Integer
-from sqlalchemy.dialects.postgresql import UUID, JSONB
+from sqlalchemy import Column, String, DateTime, Text, ForeignKey, Boolean, Integer, JSON
+from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from app.core.database import Base
 
@@ -15,7 +15,7 @@ class Blog(Base):
     excerpt = Column(String(500), nullable=True)
     cover_image = Column(String(500), nullable=True)
     category = Column(String(100), nullable=True)
-    tags = Column(JSONB, default=list)
+    tags = Column(JSON, default=list)
     author_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=True)
     is_published = Column(Boolean, default=False)
     is_featured = Column(Boolean, default=False)

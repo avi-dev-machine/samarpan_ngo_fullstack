@@ -8,3 +8,6 @@ env/
 .env
 .env.local
 uploads/
+*.db
+samarpan.db
+

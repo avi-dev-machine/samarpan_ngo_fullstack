@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime, timezone
-from sqlalchemy import Column, String, Boolean, DateTime, Text, ForeignKey, Integer, Float
-from sqlalchemy.dialects.postgresql import UUID, JSONB
+from sqlalchemy import Column, String, Boolean, DateTime, Text, ForeignKey, Integer, Float, JSON
+from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from app.core.database import Base
 
@@ -14,7 +14,7 @@ class Volunteer(Base):
     is_verified = Column(Boolean, default=False)
     verification_status = Column(String(50), default="pending")
     id_document_url = Column(String(500), nullable=True)
-    availability = Column(JSONB, default=dict)
+    availability = Column(JSON, default=dict)
     total_hours = Column(Float, default=0.0)
     reputation_points = Column(Integer, default=0)
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
