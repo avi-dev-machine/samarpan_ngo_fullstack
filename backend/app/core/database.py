@@ -11,13 +11,41 @@ NAMING_CONVENTION = {
     "pk": "pk_%(table_name)s",
 }
 
-engine = create_async_engine(
-    settings.DATABASE_URL,
-    echo=settings.DEBUG,
-    pool_pre_ping=True,
-    pool_size=20,
-    max_overflow=0,
+# Graceful Fallback check for placeholders or unconfigured credentials
+db_url = settings.DATABASE_URL
+sync_db_url = settings.SYNC_DATABASE_URL
+
+# Check if either URL contains placeholder characters
+is_placeholder = (
+    "<port>" in db_url or 
+    "<user>" in db_url or 
+    "<password>" in db_url or 
+    "<dbname>" in db_url or
+    "<host>" in db_url or
+    "localhost:5432" in db_url  # Fallback in production space environments to maintain uptime
 )
+
+if is_placeholder:
+    print("WARNING: Placeholder values or localhost detected in DATABASE_URL. Falling back to local SQLite database.")
+    db_url = "sqlite+aiosqlite:///samarpan.db"
+    sync_db_url = "sqlite:///samarpan.db"
+
+# Also handle create_async_engine and create_engine parameters dynamically
+is_sqlite = db_url.startswith("sqlite")
+
+engine_kwargs = {
+    "echo": settings.DEBUG,
+}
+
+if not is_sqlite:
+    # Postgres specific optimization flags
+    engine_kwargs.update({
+        "pool_pre_ping": True,
+        "pool_size": 20,
+        "max_overflow": 0,
+    })
+
+engine = create_async_engine(db_url, **engine_kwargs)
 
 AsyncSessionLocal = async_sessionmaker(
     engine,

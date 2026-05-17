@@ -21,3 +21,4 @@ aiofiles
 slowapi
 email-validator
 qrcode[pil]
+aiosqlite

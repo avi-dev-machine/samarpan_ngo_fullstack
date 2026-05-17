@@ -13,11 +13,24 @@ from app.models import *  # noqa
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup: create tables
+    # Startup: create tables and handle auto-seeding
+    sqlite_file = "samarpan.db"
+    is_first_time = not os.path.exists(sqlite_file)
+    
     try:
         async with engine.begin() as conn:
             await conn.run_sync(Base.metadata.create_all)
         print("Database connected and tables created.")
+        
+        # Automatic seeder trigger for zero-config SQLite deployments
+        if "sqlite" in str(engine.url) and is_first_time:
+            print("AUTOMATION: Fresh SQLite database detected. Initiating master seeder...")
+            try:
+                from seed_db import seed_data
+                await seed_data()
+                print("AUTOMATION: Master database seeding completed successfully.")
+            except Exception as seed_err:
+                print(f"AUTOMATION ERROR: Failed to auto-seed database. {seed_err}")
     except Exception as e:
         print(f"Warning: Could not connect to database during startup. {e}")
     os.makedirs(settings.UPLOAD_DIR, exist_ok=True)
