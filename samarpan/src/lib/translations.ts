@@ -1,0 +1,247 @@
+export const translations: Record<string, any> = {
+  en: {
+    hero: {
+      tag: "Serving major hope. 45,000+ lives globally upgraded ✨",
+      title1: "Hope is",
+      title1Highlight: "Action.",
+      title2: "Change is",
+      title2Highlight: "Now.",
+      desc: "Step into the future of empathy. We're matching real-time micro-donations to emergency frontlines with zero friction and absolute transparency. No gatekeepers, just pure impact.",
+      ctaDonate: "Donate Now",
+      ctaCampaigns: "Explore Campaigns",
+      scroll: "Scroll to explore",
+    },
+    stats: {
+      donations: "Total Raised",
+      volunteers: "Active Volunteers",
+      beneficiaries: "Lives Impacted",
+      countries: "Active Countries",
+      completed: "Completed Audits",
+      emergencies: "SOS Dispatches",
+    },
+    story: {
+      tag: "The Era of Action",
+      title: "Changing the Narrative. One Life at a Time.",
+      desc1: "We didn't come here to play safe. What started as a local rescue spark has officially evolved into a borderless global movement. We are tearing down traditional charity gatekeepers to serve radical transparency and direct, raw capital dispatches.",
+      desc2: "Backed by advanced AI matchmaking pipelines and a passionate community mesh on the ground, we guarantee that 99.8% of your energy and funding lands exactly where it belongs, in real-time.",
+      cta: "Vibe with Our Mission",
+      quote: "Samarpan didn't just bring supplies—they rewrote our future from the ground up.",
+      author: "— Rahul, Assam Flood Resilience Leader",
+    },
+    network: {
+      tag: "Global Live Mesh",
+      title: "Connected Humanitarian Network",
+      subtitle: "Witness our real-time active humanitarian mesh. Hover over the glowing nodes to see active community centers, micro-financing pipelines, and emergency rescue squads.",
+      details: {
+        ny: { name: "New York Hub", role: "Capital Dispatch Center", active: "124 Donors Live", volume: "₹18,50,000 dispatched" },
+        london: { name: "London Node", role: "European Coordinator", active: "89 Donors Live", volume: "₹12,40,000 dispatched" },
+        paris: { name: "Paris Bureau", role: "EU Regulatory Liaison", active: "45 Audits Complete", volume: "Compliant" },
+        mumbai: { name: "Mumbai Central Office", role: "South Asia HQ", active: "520 Volunteers Active", volume: "₹25,00,000 managed" },
+        assam: { name: "Assam Response Camp", role: "Disaster Relief Zone", active: "150 Rescuers Active", volume: "Kaziranga Relief operations" },
+        nairobi: { name: "Nairobi Hub", role: "East Africa Center", active: "340 Beneficiaries Helped", volume: "Primary Healthcare Clinic" },
+        sydney: { name: "Sydney Node", role: "Pacific Outreach", active: "62 Donors Live", volume: "₹6,80,000 dispatched" },
+        tokyo: { name: "Tokyo Base", role: "Asia-Pacific Tech Hub", active: "15 Systems Developers", volume: "AI Matchmaker Engine Support" },
+        saopaulo: { name: "São Paulo Center", role: "Latin America Logistics", active: "75 Active Responders", volume: "Relief supplies dispatched" },
+        capetown: { name: "Cape Town Station", role: "Southern Africa Unit", active: "110 Medical Staff", volume: "Mobile Clinics Active" },
+        dubai: { name: "Dubai Logistics Hub", role: "Global Supply Chain", active: "50 Tons cargo loaded", volume: "Emergency materials transit" },
+        singapore: { name: "Singapore Node", role: "SE Asia Finance Coordinator", active: "85 Donors Live", volume: "₹10,50,000 dispatched" }
+      }
+    }
+  },
+  hi: {
+    hero: {
+      tag: "वैश्विक स्तर पर 45,000 से अधिक जीवन प्रभावित",
+      title1: "आशा ही",
+      title1Highlight: "कर्म है।",
+      title2: "परिवर्तन ही",
+      title2Highlight: "अब है।",
+      desc: "समर्पण के वैश्विक मानवीय नेटवर्क में शामिल हों। एआई द्वारा संचालित, करुणा से प्रेरित। हर कार्य बदलाव की एक लहर पैदा करता है।",
+      ctaDonate: "अभी दान करें",
+      ctaCampaigns: "अभियान देखें",
+      scroll: "अन्वेषण करने के लिए स्क्रॉल करें",
+    },
+    stats: {
+      donations: "कुल दान राशि",
+      volunteers: "सक्रिय स्वयंसेवक",
+      beneficiaries: "प्रभावित जीवन",
+      countries: "सक्रिय देश",
+      completed: "पूर्ण किए गए ऑडिट",
+      emergencies: "एसओएस प्रेषण",
+    },
+    story: {
+      tag: "हमारी कहानी",
+      title: "समुदायों को सशक्त बनाना, जीवन बदलना।",
+      desc1: "एक छोटे से राहत प्रयास के रूप में जो शुरू हुआ था, वह आज एक वैश्विक आंदोलन बन चुका है। समर्पण में, हमारा मानना ​​है कि पारदर्शिता और प्रत्यक्ष कार्रवाई दुनिया के सबसे दबाव वाले मानवीय संकटों को हल करने की कुंजी है।",
+      desc2: "एआई-संचालित संसाधन आवंटन और स्वयंसेवकों के एक समर्पित नेटवर्क के माध्यम से, हम यह सुनिश्चित करते हैं कि आपका दान उन लोगों तक पहुंचे जिन्हें इसकी सबसे अधिक आवश्यकता है—जब उन्हें इसकी सबसे अधिक आवश्यकता हो।",
+      cta: "हमारी पूरी कहानी पढ़ें",
+      quote: "समर्पण ने हमें जीवन में दूसरा मौका दिया।",
+      author: "- राहुल, बाढ़ उत्तरजीवी",
+    },
+    network: {
+      tag: "ग्लोबल लाइव मेश",
+      title: "जुड़ा हुआ मानवीय नेटवर्क",
+      subtitle: "हमारे वास्तविक समय के सक्रिय मानवीय मेश के साक्षी बनें। सक्रिय सामुदायिक केंद्रों, सूक्ष्म वित्तपोषण पाइपलाइनों और आपातकालीन बचाव दलों को देखने के लिए नोड्स पर होवर करें।",
+      details: {
+        ny: { name: "न्यूयॉर्क हब", role: "पूंजी प्रेषण केंद्र", active: "124 दाता लाइव", volume: "₹18,50,000 प्रेषित" },
+        london: { name: "लंदन नोड", role: "यूरोपीय समन्वयक", active: "89 दाता लाइव", volume: "₹12,40,000 प्रेषित" },
+        paris: { name: "पेरिस ब्यूरो", role: "यूरोपीय नियामक संपर्क", active: "45 ऑडिट पूर्ण", volume: "अनुपालन" },
+        mumbai: { name: "मुंबई केंद्रीय कार्यालय", role: "दक्षिण एशिया मुख्यालय", active: "520 स्वयंसेवक सक्रिय", volume: "₹25,00,000 प्रबंधित" },
+        assam: { name: "असम प्रतिक्रिया शिविर", role: "आपदा राहत क्षेत्र", active: "150 बचावकर्मी सक्रिय", volume: "काजीरंगा राहत अभियान" },
+        nairobi: { name: "नैरोबी हब", role: "पूर्वी अफ्रीका केंद्र", active: "340 लाभार्थियों की मदद की", volume: "प्राथमिक स्वास्थ्य क्लिनिक" },
+        sydney: { name: "सिडनी नोड", role: "प्रशांत आउटरीच", active: "62 दाता लाइव", volume: "₹6,80,000 प्रेषित" },
+        tokyo: { name: "टोक्यो बेस", role: "एशिया-प्रशांत टेक हब", active: "15 सिस्टम डेवलपर्स", volume: "एआई मैचमेकर इंजन सपोर्ट" },
+        saopaulo: { name: "साओ पाउलो केंद्र", role: "लैटिन अमेरिका रसद", active: "75 सक्रिय प्रतिक्रियाकर्ता", volume: "राहत सामग्री प्रेषित" },
+        capetown: { name: "केप टाउन स्टेशन", role: "दक्षिणी अफ्रीका इकाई", active: "110 चिकित्सा कर्मचारी", volume: "मोबाइल क्लीनिक सक्रिय" },
+        dubai: { name: "दुबई लॉजिस्टिक्स हब", role: "वैश्विक आपूर्ति श्रृंखला", active: "50 टन कार्गो लोड", volume: "आपातकालीन सामग्री पारगमन" },
+        singapore: { name: "सिंगापुर नोड", role: "दप एशिया वित्त समन्वयक", active: "85 दाता लाइव", volume: "₹10,50,000 प्रेषित" }
+      }
+    }
+  },
+  bn: {
+    hero: {
+      tag: "বিশ্বব্যাপী ৪৫,০০০ এরও বেশি জীবন প্রভাবিত",
+      title1: "আশাই হলো",
+      title1Highlight: "কর্ম।",
+      title2: "পরিবর্তনই হলো",
+      title2Highlight: "এখনই।",
+      desc: "সমর্পণের বৈশ্বিক মানবিক নেটওয়ার্কে যোগ দিন। এআই দ্বারা পরিচালিত, সহানুভূতি দ্বারা চালিত। প্রতিটি কাজ পরিবর্তনের একটি তরঙ্গ তৈরি করে।",
+      ctaDonate: "এখনই দান করুন",
+      ctaCampaigns: "প্রচারণা অন্বেষণ করুন",
+      scroll: "অন্বেষণ করতে স্ক্রোল করুন",
+    },
+    stats: {
+      donations: "মোট সংগৃহীত",
+      volunteers: "সক্রিয় স্বেচ্ছাসেবক",
+      beneficiaries: "প্রভাবিত জীবন",
+      countries: "সক্রিয় দেশ",
+      completed: "সম্পন্ন অডিট",
+      emergencies: "এসওএস প্রেরণ",
+    },
+    story: {
+      tag: "আমাদের গল্প",
+      title: "সম্প্রদায়কে ক্ষমতায়ন করা, জীবন রূপান্তর করা।",
+      desc1: "একটি ছোট ত্রাণ প্রচেষ্টা হিসাবে যা শুরু হয়েছিল তা আজ একটি বিশ্বব্যাপী আন্দোলনে পরিণত হয়েছে। সমর্পণে, আমরা বিশ্বাস করি যে স্বচ্ছতা এবং প্রত্যক্ষ পদক্ষেপ বিশ্বের সবচেয়ে চাপযুক্ত মানবিক সংকট সমাধানের চাবিকাঠি।",
+      desc2: "এআই-চালিত সম্পদ বণ্টন এবং স্বেচ্ছাসেবকদের একটি নিবেদিত নেটওয়ার্কের মাধ্যমে, আমরা নিশ্চিত করি যে আপনার অনুদান তাদের কাছে পৌঁছায় যাদের এটি সবচেয়ে বেশি প্রয়োজন—যখন তাদের সবচেয়ে বেশি প্রয়োজন হয়।",
+      cta: "আমাদের সম্পূর্ণ গল্প পড়ুন",
+      quote: "সমর্পণ আমাদের জীবনে দ্বিতীয় সুযোগ দিয়েছে।",
+      author: "- রাহুল, বন্যা থেকে বেঁচে যাওয়া",
+    },
+    network: {
+      tag: "গলোবাল লাইভ মেশ",
+      title: "সংযুক্ত মানবিক নেটওয়ার্ক",
+      subtitle: "আমাদের রিয়েল-টাইম সক্রিয় মানবিক জাল প্রত্যক্ষ করুন। সক্রিয় কমিউনিটি সেন্টার, মাইক্রো-অর্থায়ন লাইন এবং জরুরি উদ্ধার দল দেখতে উজ্জ্বল নোডগুলিতে হোভার করুন।",
+      details: {
+        ny: { name: "নিউ ইয়র্ক হাব", role: "ক্যাপিটাল ডিসপ্যাচ সেন্টার", active: "১২৪ জন দাতা লাইভ", volume: "₹১৮,৫০,০০০ পাঠানো হয়েছে" },
+        london: { name: "লন্ডন নোড", role: "ইউরোপীয় সমন্বয়কারী", active: "৮৯ জন দাতা লাইভ", volume: "₹১২,৪০,০০০ পাঠানো হয়েছে" },
+        paris: { name: "প্যারিস ব্যুরো", role: "ইউরোপীয়ন রেগুলেটরি লিয়াজোঁ", active: "৪৫ অডিট সম্পন্ন", volume: "অনুগত" },
+        mumbai: { name: "মুম্বাই কেন্দ্রীয় কার্যালয়", role: "দক্ষিণ এশিয়া সদর দফতর", active: "৫২০ জন স্বেচ্ছাসেবক সক্রিয়", volume: "₹২৫,০০,০০০ পরিচালিত" },
+        assam: { name: "আসাম রেসপন্স ক্যাম্প", role: "দুর্যোগ ত্রাণ অঞ্চল", active: "১৫০ জন উদ্ধারকারী সক্রিয়", volume: "কাজিরাঙ্গা ত্রাণ কার্যক্রম" },
+        nairobi: { name: "নয়রোবি হাব", role: "পূর্ব আফ্রিকা কেন্দ্র", active: "৩৪০ জন সুবিধাভোগী সাহায্যপ্রাপ্ত", volume: "প্রাথমিক স্বাস্থ্য ক্লিনিক" },
+        sydney: { name: "সিডনি নোড", role: "প্যাসিফিক আউটরিচ", active: "৬২ জন দাতা লাইভ", volume: "₹৬,৮০,০০০ পাঠানো হয়েছে" },
+        tokyo: { name: "টোকিও বেস", role: "এশিয়া-প্যাসিফিক টেক হাব", active: "১৫ জন ডেভেলপার", volume: "এআই ম্যাচমেকার ইঞ্জিন সাপোর্ট" },
+        saopaulo: { name: "সাও পাওলো কেন্দ্র", role: "ল্যাটিন আমেরিকা লজিস্টিকস", active: "৭৫ জন সক্রিয় উদ্ধারকারী", volume: "ত্রাণ সামগ্রী পাঠানো হয়েছে" },
+        capetown: { name: "কেপ টাউন স্টেশন", role: "দক্ষিণ আফ্রিকা ইউনিট", active: "১১০ জন চিকিৎসা কর্মী", volume: "মোবাইল ক্লিনিক সক্রিয়" },
+        dubai: { name: "দুবাই লজিস্টিক হাব", role: "বিশ্বব্যাপী সরবরাহ শৃঙ্খল", active: "৫০ টন কার্গো লোড", volume: "জরুরী উপকরণ ট্রানজিট" },
+        singapore: { name: "সিঙ্গাপুর নোড", role: "দঃপূঃ এশিয়া অর্থ সমন্বয়কারী", active: "৮৫ জন দাতা লাইভ", volume: "₹১০,৫০,০০০ পাঠানো হয়েছে" }
+      }
+    }
+  },
+  es: {
+    hero: {
+      tag: "Más de 45,000 vidas impactadas a nivel mundial",
+      title1: "La esperanza es",
+      title1Highlight: "Acción.",
+      title2: "El cambio es",
+      title2Highlight: "Ahora.",
+      desc: "Únase a la red humanitaria mundial de Samarpan. Impulsado por IA, impulsado por la compasión. Cada acción crea una onda de cambio.",
+      ctaDonate: "Donar Ahora",
+      ctaCampaigns: "Explorar Campañas",
+      scroll: "Desplácese para explorar",
+    },
+    stats: {
+      donations: "Total Recaudado",
+      volunteers: "Voluntarios Activos",
+      beneficiaries: "Vidas Impactadas",
+      countries: "Países Activos",
+      completed: "Auditorías Completadas",
+      emergencies: "Despachos SOS",
+    },
+    story: {
+      tag: "Nuestra Historia",
+      title: "Empoderando Comunidades, Transformando Vidas.",
+      desc1: "Lo que comenzó como un pequeño esfuerzo de ayuda ha crecido hasta convertirse en un movimiento global. En Samarpan, creemos que la transparencia y la acción directa son las claves para resolver las crisis humanitarias más apremiantes del mundo.",
+      desc2: "A través de la asignación de recursos impulsada por IA y una red dedicada de voluntarios, nos aseguramos de que sus donaciones lleguen a quienes más las necesitan, cuando más las necesitan.",
+      cta: "Lea Nuestra Historia Completa",
+      quote: "Samarpan nos dio una segunda oportunidad en la vida.",
+      author: "- Rahul, Sobreviviente de Inundación",
+    },
+    network: {
+      tag: "Malla Global en Vivo",
+      title: "Red Humanitaria Conectada",
+      subtitle: "Sea testigo de nuestra red humanitaria activa en tiempo real. Pase el cursor sobre los nodos brillantes para ver los centros comunitarios activos, las tuberías de microfinanciamiento y los escuadrones de rescate de emergencia.",
+      details: {
+        ny: { name: "Centro de Nueva York", role: "Centro de Despacho de Capital", active: "124 Donantes en Vivo", volume: "₹18,50,000 despachados" },
+        london: { name: "Nodo de Londres", role: "Coordinador Europeo", active: "89 Donantes en Vivo", volume: "₹12,40,000 despachados" },
+        paris: { name: "Oficina de París", role: "Enlace Regulador de la UE", active: "45 Auditorías Completadas", volume: "Conforme" },
+        mumbai: { name: "Oficina Central de Mumbai", role: "Sede de Asia del Sur", active: "520 Voluntarios Activos", volume: "₹25,00,000 gestionados" },
+        assam: { name: "Campamento de Respuesta en Assam", role: "Zona de Alivio de Desastres", active: "150 Rescatistas Activos", volume: "Operaciones de ayuda en Kaziranga" },
+        nairobi: { name: "Centro de Nairobi", role: "Centro de África Oriental", active: "340 Beneficiarios Ayudados", volume: "Clínica de atención primaria de salud" },
+        sydney: { name: "Nodo de Sydney", role: "Alcance en el Pacífico", active: "62 Donantes en Vivo", volume: "₹6,80,000 despachados" },
+        tokyo: { name: "Base de Tokio", role: "Centro Tecnológico de Asia-Pacífico", active: "15 Desarrolladores de Sistemas", volume: "Soporte del Motor AI Matchmaker" },
+        saopaulo: { name: "Centro de São Paulo", role: "Logística de América Latina", active: "75 Socorristas Activos", volume: "Suministros de socorro despachados" },
+        capetown: { name: "Estación de Ciudad del Cabo", role: "Unidad de África Austral", active: "110 Personal Médico", volume: "Clínicas Móviles Activas" },
+        dubai: { name: "Centro Logístico de Dubai", role: "Cadena de Suministro Global", active: "50 Toneladas cargadas", volume: "Tránsito de materiales de emergencia" },
+        singapore: { name: "Nodo de Singapur", role: "Coordinador Financiero del Sudeste Asiático", active: "85 Donantes en Vivo", volume: "₹10,50,000 despachados" }
+      }
+    }
+  },
+  fr: {
+    hero: {
+      tag: "Plus de 45 000 vies impactées dans le monde",
+      title1: "L'espoir est",
+      title1Highlight: "Action.",
+      title2: "Le changement est",
+      title2Highlight: "Maintenant.",
+      desc: "Rejoignez le réseau humanitaire mondial de Samarpan. Propulsé par l'IA, guidé par la compassion. Chaque action crée une ondulation de changement.",
+      ctaDonate: "Faire un Don",
+      ctaCampaigns: "Explorer les Campagnes",
+      scroll: "Faites défiler pour explorer",
+    },
+    stats: {
+      donations: "Total Récolté",
+      volunteers: "Volontaires Actifs",
+      beneficiaries: "Vies Impactées",
+      countries: "Pays Actifs",
+      completed: "Audits Complétés",
+      emergencies: "Envois SOS",
+    },
+    story: {
+      tag: "Notre Histoire",
+      title: "Autonomiser les Communautés, Transformer les Vies.",
+      desc1: "Ce qui a commencé comme un petit effort de secours est devenu un mouvement mondial. Chez Samarpan, nous croyons que la transparence et l'action directe sont les clés pour résoudre les crises humanitaires les plus urgentes du monde.",
+      desc2: "Grâce à une allocation des ressources basée sur l'IA et à un réseau dédié de bénévoles, nous veillons à ce que vos dons parviennent à ceux qui en ont le plus besoin, quand ils en ont le plus besoin.",
+      cta: "Lire Notre Histoire Complète",
+      quote: "Samarpan nous a donné une seconde chance dans la vie.",
+      author: "- Rahul, Survivant d'Inondation",
+    },
+    network: {
+      tag: "Réseau Global en Direct",
+      title: "Réseau Humanitaire Connecté",
+      subtitle: "Soyez témoin de notre réseau humanitaire actif en temps réel. Survolez les nœuds brillants pour voir les centres communautaires actifs, les pipelines de micro-financement et les équipes de secours d'urgence.",
+      details: {
+        ny: { name: "Pôle de New York", role: "Centre de Dispatching des Capitaux", active: "124 Donateurs en Direct", volume: "₹18,50,000 expédiés" },
+        london: { name: "Nœud de Londres", role: "Coordinateur Européen", active: "89 Donateurs en Direct", volume: "₹12,40,000 expédiés" },
+        paris: { name: "Bureau de Paris", role: "Liaison Réglementaire de l'UE", active: "45 Audits Complétés", volume: "Conforme" },
+        mumbai: { name: "Bureau Central de Mumbai", role: "QG de l'Asie du Sud", active: "520 Bénévoles Actifs", volume: "₹25,00,000 gérés" },
+        assam: { name: "Camp de Réponse d'Assam", role: "Zone de Secours en Cas de Catastrophe", active: "150 Sauveteurs Actifs", volume: "Secours Kaziranga" },
+        nairobi: { name: "Pôle de Nairobi", role: "Centre de l'Afrique de l'Est", active: "340 Bénéficiaires Aidés", volume: "Clinique de soins de santé primaires" },
+        sydney: { name: "Nœud de Sydney", role: "Sensibilisation du Pacifique", active: "62 Donateurs en Direct", volume: "₹6,80,000 expédiés" },
+        tokyo: { name: "Base de Tokyo", role: "Pôle Technologique Asie-Pacifique", active: "15 Développeurs Systèmes", volume: "Support Moteur AI Matchmaker" },
+        saopaulo: { name: "Centre de São Paulo", role: "Logistique d'Amérique Latine", active: "75 Secouristes Actifs", volume: "Matériel de secours expédié" },
+        capetown: { name: "Station du Cap", role: "Unité d'Afrique Australe", active: "110 Personnel Médical", volume: "Cliniques Mobiles Actives" },
+        dubai: { name: "Pôle Logistique de Dubaï", role: "Chaîne d'Approvisionnement Mondiale", active: "50 Tonnes chargées", volume: "Transit de matériel d'urgence" },
+        singapore: { name: "Nœud de Singapour", role: "Coordinateur Financier d'Asie du SE", active: "85 Donateurs en Direct", volume: "₹10,50,000 expédiés" }
+      }
+    }
+  }
+};
